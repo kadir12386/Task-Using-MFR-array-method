@@ -13,10 +13,10 @@ request.onload = function(){
 
     // 1. Get all the countries from Aisa Continent/region using filter function.
     let asia_countries = data.filter(element => element.region === "Asia");
-    console.log("All the countries from Asia Continent/region: ",asia_countries);
+    console.log("All the Asia Continent/region countries : ",asia_countries);
 
     // 2. Get all the countries with population of less than 2 lacs using filter function.
-    let countries_population = data.filter(element => element.population <200000);
+    let countries_population = data.filter(element => element.population < 200000);
     console.log("All the countries with population of less than 2 lacs: ",countries_population);
     
     // //3. Print the country which use as Dollars(USD) as currency.
@@ -30,7 +30,7 @@ request.onload = function(){
             }
         }
     });
-    console.log("The country which using Dollars(USD): ",currency);
+    console.log("The country which  is using Dollars (USD) currency: ",currency);
 
    
     //4.Print the sum of the total population of the countries by using the reduce function.
