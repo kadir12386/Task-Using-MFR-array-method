@@ -32,8 +32,7 @@ request.onload = function(){
     });
     console.log("The country which using Dollars(USD): ",currency);
 
-    
-    
+   
     //4.Print the sum of the total population of the countries by using the reduce function.
     let totalPopulation =data.reduce((total,currentvalue,) => total+currentvalue.population,0)
     console.log("The total population of the countries: ",totalPopulation);
